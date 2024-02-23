@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(vecteezy_abstract-purple-luxury-papercut-background_.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            text-align: center;
+            margin: 20px;
+        }
+        p{
+            font-family: century gothic;
+            font-size: 12px;
+            margin: 15px;
+            width: 100px;
+            padding: 5px;
+            text-align: center;
+            background-color: rgb(77, 53, 122);
+            color: white;
+            padding: 10px;
+            width: 450px;
+            box-shadow: 8px 8px 8px rgb(153, 103, 215);
+        }
+        h1{
+            color: wheat;
+            font-family: century gothic;
+            font-size: 13px;
+            margin: 20px;
+            width: 100px;
+            padding: 10px;
+            text-align: center;
+            width: 450px;
+            box-shadow: 8px 8px 8px rgb(153, 103, 215);
+            background-color: rgba(51, 22, 114, 0.64);
+
+        }
+        #q{
+            position: relative;
+            position: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            top: 150px;
+            right: 100px;
+            color: white;
+        }
+        q{
+            position: relative;
+            position: fixed;
+            top: 200px;
+            right: 100px;
+            color: white;
+            text-align: justify;
+            text-justify: distribute;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h2>
+        <q id="q">PERFORMANCE TASK #2</q><br>
+    </h2>
+ 
+        <q>Create a HTML5 Document that will utilize Javascript codes- Iteration Statements and that
+            will accept 10 integers, determine if it is odd or even and get its sum. <br><br>Criteria for Grading<br>
+            || Knowledge and understanding of the codes: 5 points ______<br>
+            || Organization of the Source code: 5 points ______<br>
+            || Design and Style 5 points ______</q>
+        
+
+    <script>
+        let equal = 0
+    for (let i = 0; i < 10; i++) {
+        const p = parseInt(prompt("Enter 10 Numbers: ", "0"))
+        if (p % 2 === 0) {
+            document.writeln("<p id='even'>", p + " — Even", "</p>",)
+             equal += p
+        }
+        else {
+            document.writeln("<p id='odd'>", p + " — Odd", "</p>",)
+
+        }
+    }
+        document.writeln ("<h1>", "SUM OF EVEN NUMBERS : " + equal, "</h1>")
+    
+
+</script>
+
+</body>
+</html>
